@@ -1,0 +1,128 @@
+.songs {
+    background-color: rgb(24, 23, 23);
+}
+
+/* Container of the songs */ 
+.songs-container {
+    width: 75rem;
+    margin: 0 auto;
+}
+ 
+/* Songs cards container */ 
+.songs-cards-container {
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    overflow: visible;
+    padding: 5rem 0;
+}
+  
+/* Container for the album image and the album info */
+.song {
+    min-width: 0;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    position: relative;
+}
+ 
+/* First element */ 
+.song:first-child {
+    padding: 0.8rem;
+}
+
+/* Second element */ 
+.song:last-child {
+    padding: 0.8rem;
+}
+  
+/* image cover properties */ 
+.song img {
+    width: 100%;
+    box-shadow: 0.1rem 0.1rem 1.6rem -0.2rem rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+  
+/* Hover effect on image */ 
+.song img:hover {
+    cursor: pointer;
+}
+  
+/* Container for the song info */
+.song-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    opacity: 0;
+    margin: 0.8rem;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+  
+/* This code will avoid overlapping */
+.song-info h2,
+.song-info h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+  
+/* Song title */
+.song-info h2 {
+    font-size: 1.75rem;
+    color: White;
+    padding-top: 2rem;
+}
+  
+/* Artist */
+.song-info h4 {
+    font-size: 1rem;
+    color: rgb(236, 255, 61);
+    margin-top: 0.5rem;
+    font-weight: 400;
+    letter-spacing: 0.005rem;
+}
+ 
+/* Set curser */ 
+.song-info h2,
+.song-info h4 {
+    cursor: pointer;
+}
+  
+/* Play now button */
+.song-info a {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+    position: relative;
+    bottom: -2rem;
+}
+ 
+/* Hover effect */ 
+.song-info a:hover {
+    color: rgb(236, 255, 61);
+}
+
+/* Hover effect */  
+.song-info:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.8);
+}
+  
+/* Hover effect */ 
+.song-info:hover > h2 {
+    color: White;
+    white-space: normal;
+    overflow: initial;
+    text-overflow: initial;
+}

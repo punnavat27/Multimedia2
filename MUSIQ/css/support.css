@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* First section of the webpage */ 
+.cover {
+    background-color: rgb(35, 35, 35);
+    position: relative;
+  }
+  
+  /* container for cover content */ 
+  .cover-container {
+    padding: 15.6rem 1.5rem 0 1.5rem;
+  }
+  
+  /* Content alignment */ 
+  .cover-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Title properties */ 
+  .cover-title {
+    font-size: 5rem;
+    color: White;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    line-height: 3rem;
+    letter-spacing: 1rem;
+  }
+  
+  /* Button properties */ 
+  .cover-button {
+    padding: 2rem 6rem;
+    border: none;
+    border-radius: 3rem;
+    color:  rgb(35, 35, 35);
+    background-color: rgb(236, 255, 61);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 0rem;
+  }
+  
+  /* Hover properties on button */ 
+  .cover-button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  /* Txt:email */ 
+.email {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    outline: none;
+    transition: all 0.4s ease;
+    margin-bottom: 20rem;
+}

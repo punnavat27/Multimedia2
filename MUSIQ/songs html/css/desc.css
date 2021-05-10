@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* Overwrite style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(46, 46, 46);
+  }
+  
+  /* Main body style */
+  body {
+    font-family: "Lato", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  }
+  
+  /* Container properties */
+  .container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Back button back to songs section in main.html */
+  .back button {
+    padding:1.5rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    color:  rgb(35, 35, 35);
+    background-color: rgb(236, 255, 61);
+    font-size: 1.25rem;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    margin-left: -5rem;
+  }
+
+  /* Hover properties of back button */
+  .back button:hover {
+    padding:2rem 4rem;
+    font-size: 2rem;
+    background-color: white;
+  }
+
+  /* Song description container */
+  .description {
+    border: 3rem 3rem;
+  }
+
+  /* Properties of text on detail */
+  .detail {
+    transition: all 0.4s ease;
+    padding:0rem 0rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+    text-align:justify;
+    margin-right: 10rem;
+    margin-bottom: 3;
+    
+  }
+
+  /* Card container for 3D effect */
+  .card-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Card properties itself */
+  .card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 2rem 5rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Prepare for picture cover */
+  .song {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Properties and effect of the image itself */
+  .song img {
+    width: 15rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+  }
+  
+  /* Song name */
+  .info h1 {
+    font-size: 3rem;
+    color: white;
+    transition: all 0.75s ease-out;
+    text-align: center;
+  }
+
+  /* Artist name */
+  .info h3 {
+    font-size: 1.5rem;
+    padding: 0rem 0rem;
+    margin-top: 2.5rem;
+    color: rgb(236, 255, 61);
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+    text-align: center;
+  }
+
+  /* Prepare for watch button */
+  .watch {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+  }
+
+  /* Properties of watch button */
+  .watch button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: rgb(236, 255, 61);
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: 1rem;
+  }
+
+  /* Hover effect on watch button */
+  .watch button:hover {
+    background-color: white;
+  }
+
+ 
